@@ -11,8 +11,6 @@
         }
         body {
             font-family: 'Cairo', sans-serif;
-            direction: ltr;
-            text-align: left;
             line-height: 1.6;
             background-color: #f4f4f9;
             color: #333;
@@ -89,20 +87,20 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="content">
         <h1 id="name">Abed Alhafeeth Altamimi</h1>
         <ul class="contact-info">
-            <li><strong id="address-label">Address:</strong> <span id="address">Palestine/Ramallah</span></li>
-            <li><strong id="phone-label">Phone:</strong> <span id="phone">0595995652</span></li>
-            <li><strong id="status-label">Marital Status:</strong> <span id="status">Married</span></li>
-            <li><strong id="email-label">Email:</strong> <span id="email">abedttt@gmail.com</span></li>
-            <li><strong id="dob-label">Date of Birth:</strong> <span id="dob">8.8.1979</span></li>
+            <li><strong id="label-address">Address:</strong> <span id="address">Palestine/Ramallah</span></li>
+            <li><strong id="label-phone">Phone:</strong> <span id="phone">0595995652</span></li>
+            <li><strong id="label-status">Marital Status:</strong> <span id="status">Married</span></li>
+            <li><strong id="label-email">Email:</strong> <span id="email">abedttt@gmail.com</span></li>
+            <li><strong id="label-dob">Date of Birth:</strong> <span id="dob">8.8.1979</span></li>
         </ul>
-        <p id="objective">I am looking for a job and want to join an institution to improve my skills.</p>
+        <p id="intro">I am looking for a job and want to join an institution to improve my skills.</p>
 
         <div class="section">
-            <h2 id="experience-label">Experience</h2>
-            <p id="experience-summary">I have gained great experience in the mobile market and was promoted from Merchandiser to Supervisor in 2014. Dealing with customers and developing my relationships with companies and shops gave me the opportunity to be promoted again to Senior Supervisor in 2015.</p>
+            <h2 id="experience-title">Experience</h2>
+            <p id="experience-description">I have gained great experience in the mobile market and was promoted from Merchandiser to Supervisor in 2014. Dealing with customers and developing my relationships with companies and shops gave me the opportunity to be promoted again to Senior Supervisor in 2015.</p>
             <ul id="experience-list">
                 <li><strong>Promoter:</strong> 2009-2010, Channels Team – Coca Cola Jordan</li>
                 <li><strong>Merchandiser:</strong> 2010-Nov 2011, Channels Team – Samsung Jordan</li>
@@ -115,8 +113,8 @@
         </div>
 
         <div class="section">
-            <h2 id="skills-label">Skills</h2>
-            <ul class="skills">
+            <h2 id="skills-title">Skills</h2>
+            <ul class="skills" id="skills-list">
                 <li>Leadership</li>
                 <li>Excellent communication</li>
                 <li>Work under pressure</li>
@@ -124,15 +122,15 @@
         </div>
 
         <div class="section">
-            <h2 id="languages-label">Language Skills</h2>
-            <ul class="languages">
+            <h2 id="languages-title">Language Skills</h2>
+            <ul class="languages" id="languages-list">
                 <li>English: Good</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2 id="computer-label">Computer Skills</h2>
-            <ul class="computer-skills">
+            <h2 id="computer-skills-title">Computer Skills</h2>
+            <ul class="computer-skills" id="computer-skills-list">
                 <li>Good use of Microsoft Office programs (Word, Excel, PowerPoint)</li>
             </ul>
         </div>
@@ -149,19 +147,21 @@
             document.documentElement.setAttribute("lang", "ar");
             document.body.setAttribute("dir", "rtl");
             document.body.style.textAlign = "right";
-
-            document.getElementById('name').textContent = 'عابد الحفيظ التميمي';
-            document.getElementById('address-label').textContent = 'العنوان:';
-            document.getElementById('address').textContent = 'فلسطين/رام الله';
-            document.getElementById('phone-label').textContent = 'الهاتف:';
-            document.getElementById('status-label').textContent = 'الحالة الاجتماعية:';
-            document.getElementById('status').textContent = 'متزوج';
-            document.getElementById('email-label').textContent = 'البريد الإلكتروني:';
-            document.getElementById('dob-label').textContent = 'تاريخ الميلاد:';
-            document.getElementById('objective').textContent = 'أنا أبحث عن وظيفة وأرغب في الانضمام إلى مؤسسة لتحسين مهاراتي.';
-            document.getElementById('experience-label').textContent = 'الخبرات';
-            document.getElementById('experience-summary').textContent = 'لقد اكتسبت خبرة كبيرة في سوق الهواتف المحمولة وتم ترقيتي من تاجر إلى مشرف في عام 2014. التعامل مع العملاء وتطوير علاقاتي مع الشركات والمتاجر أعطاني الفرصة للترقية مرة أخرى إلى مشرف أول في عام 2015.';
-            document.getElementById('experience-list').innerHTML = `
+            document.getElementById("name").textContent = "عبد الحفيظ التميمي";
+            document.getElementById("label-address").textContent = "العنوان:";
+            document.getElementById("address").textContent = "فلسطين/رام الله";
+            document.getElementById("label-phone").textContent = "الهاتف:";
+            document.getElementById("phone").textContent = "0595995652";
+            document.getElementById("label-status").textContent = "الحالة الاجتماعية:";
+            document.getElementById("status").textContent = "متزوج";
+            document.getElementById("label-email").textContent = "البريد الإلكتروني:";
+            document.getElementById("email").textContent = "abedttt@gmail.com";
+            document.getElementById("label-dob").textContent = "تاريخ الميلاد:";
+            document.getElementById("dob").textContent = "8.8.1979";
+            document.getElementById("intro").textContent = "أنا أبحث عن وظيفة وأرغب في الانضمام إلى مؤسسة لتحسين مهاراتي.";
+            document.getElementById("experience-title").textContent = "الخبرات";
+            document.getElementById("experience-description").textContent = "لقد اكتسبت خبرة كبيرة في سوق الهواتف المحمولة وتم ترقيتي من تاجر إلى مشرف في عام 2014. التعامل مع العملاء وتطوير علاقاتي مع الشركات والمتاجر أعطاني الفرصة للترقية مرة أخرى إلى مشرف أول في عام 2015.";
+            document.getElementById("experience-list").innerHTML = `
                 <li><strong>مروج:</strong> 2009-2010، فريق القنوات - كوكا كولا الأردن</li>
                 <li><strong>تاجر:</strong> 2010-نوفمبر 2011، فريق القنوات - سامسونج الأردن</li>
                 <li><strong>تاجر:</strong> BCI - سامسونج 2011-2012، الأردن</li>
@@ -170,5 +170,10 @@
                 <li><strong>موظف متجر:</strong> مجموعة أبو شقرة 2019-الآن، الأردن</li>
                 <li><strong>مشرف:</strong> أوكسفورد تيليكوم 2020-2023، الأردن</li>
             `;
-            document.getElementById('skills-label').textContent = 'المهارات';
-            document.getElementById('languages-label').
+            document.getElementById("skills-title").textContent = "المهارات";
+            document.getElementById("skills-list").innerHTML = `
+                <li>القيادة</li>
+                <li>اتصالات ممتازة</li>
+                <li>تحمل ضغط العمل</li>
+            `;
+            document
