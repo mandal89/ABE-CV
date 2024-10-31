@@ -1,0 +1,109 @@
+@page {
+    size: A4;
+    margin: 20mm;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+.container {
+    width: calc(100%);
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 2px 12px #aaa;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.contact-info {
+    flex: 2;
+}
+.photo {
+    flex: 1;
+    text-align: center;
+}
+h1, h2, h3 {
+    color: #2a9d8f;
+    margin-bottom: 10px;
+}
+.section {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.contact-info, .skills, .languages, .computer-skills {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-info li, .skills li, .languages li, .computer-skills li {
+    margin-bottom: 4px;
+}
+.contact-info li strong {
+    display: inline-block;
+    width: 150px;
+    color: #264653;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.download-btn {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.download-btn:hover {
+    background-color: #21867a;
+}
+.language-switch {
+    text-align: center;
+    margin-top: 20px;
+}
+.language-switch button {
+    padding: 10px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+.language-switch button:hover {
+    background-color: #21867a;
+}
+.square {
+    border: 3px solid #2a9d8f;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+@media print {
+    .non-printable {
+        display: none;
+    }
+}
+```[_{{{CITATION{{{_1{](https://github.com/MaximeRogues/examPhpRoguesMaxime/tree/3345c4b24afc05e14402b51d4066f35fa435a3af/index.php)
